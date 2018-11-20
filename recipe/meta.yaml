@@ -1,5 +1,6 @@
 {% set name = "scyjava" %}
 {% set version = "0.1.0" %}
+{% set build_number = 1 %}
 
 package:
   name: {{ name|lower }}
@@ -10,7 +11,7 @@ source:
   sha256: 6eb1218e763c4842a114adc5f5d945f7e728a06016e83b9c0e287784bda9eedc
 
 build:
-  number: 0
+  number: {{ build_number }}
   script: "{{ PYTHON }} -m pip install . -vvv --no-deps"
   skip: True  # [py2k]
 
@@ -24,6 +25,8 @@ requirements:
     - python
     - pyjnius
     - jgo
+    - maven
+    - openjdk
 
 test:
   imports:
