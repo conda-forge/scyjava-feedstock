@@ -13,16 +13,16 @@ source:
 build:
   number: {{ build_number }}
   script: "{{ PYTHON }} -m pip install . -vvv --no-deps"
-  skip: True  # [py2k]
+  noarch: python
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
     - pyjnius
     - jgo
   run:
-    - python
+    - python >=3.6
     - pyjnius
     - jgo
     - maven
@@ -35,7 +35,7 @@ test:
 
 about:
   home: https://github.com/scijava/scyjava
-  license: PUBLIC-DOMAIN
+  license: Unlicense
   license_family: PUBLIC-DOMAIN
   summary: 'Supercharged Java access from Python.'
   doc_url: https://github.com/scijava/scyjava
