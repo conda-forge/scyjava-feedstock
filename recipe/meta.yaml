@@ -31,7 +31,7 @@ requirements:
 test:
   imports:
     - scyjava
-    - scyjava_config
+    - scyjava.config
 
 about:
   home: https://github.com/scijava/scyjava
