@@ -1,6 +1,6 @@
 {% set name = "scyjava" %}
-{% set version = "0.4.0" %}
-{% set build_number = 2 %}
+{% set version = "1.0.0" %}
+{% set build_number = 0 %}
 
 package:
   name: {{ name|lower }}
@@ -8,11 +8,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: bccb1ba7f4ef21ada6b7f491ab98fc1600c044daa1c5ba64d1f5c14dac928937
+  sha256: 79a0af4a52f2658aea1a44720c7a41d208a2be3bccd8ae41d66d5d028a10f7ab
 
 build:
   number: {{ build_number }}
-  script: "{{ PYTHON }} -m pip install . -vvv --no-deps"
+  script: {{ PYTHON }} -m pip install . -vvv --no-deps
   noarch: python
 
 requirements:
@@ -37,7 +37,7 @@ about:
   home: https://github.com/scijava/scyjava
   license: Unlicense
   license_family: PUBLIC-DOMAIN
-  summary: 'Supercharged Java access from Python.'
+  summary: Supercharged Java access from Python.
   doc_url: https://github.com/scijava/scyjava
   dev_url: https://github.com/scijava/scyjava
 
