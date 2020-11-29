@@ -19,11 +19,11 @@ requirements:
   host:
     - python >=3.6
     - pip
-    - pyjnius
+    - jpype1
     - jgo
   run:
     - python >=3.6
-    - pyjnius
+    - jpype1
     - jgo
     - maven
     - openjdk
