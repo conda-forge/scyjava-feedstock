@@ -1,11 +1,11 @@
-About scyjava
-=============
+About scyjava-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/scyjava-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/scijava/scyjava
 
 Package license: Unlicense
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/scyjava-feedstock/blob/main/LICENSE.txt)
 
 Summary: Supercharged Java access from Python.
 
