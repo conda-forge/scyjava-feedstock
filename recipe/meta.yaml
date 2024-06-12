@@ -17,12 +17,12 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.8
     - pip
     - jpype1 >=1.3.0
     - jgo
   run:
-    - python >=3.7
+    - python >=3.8
     - jpype1 >=1.3.0
     - jgo
     - maven
