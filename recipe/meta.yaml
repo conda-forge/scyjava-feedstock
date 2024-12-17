@@ -21,8 +21,9 @@ requirements:
     - pip
     - jpype1 >=1.3.0
     - jgo
+    - setuptools >=61.2
   run:
-    - python >={{ python_min }}
+    - python >=3.8
     - jpype1 >=1.3.0, <=1.5.0
     - jgo
     - maven !=3.9.7
