@@ -1,6 +1,7 @@
 {% set name = "scyjava" %}
 {% set version = "1.10.2" %}
-{% set build_number = 0 %}
+{% set build_number = 1 %}
+{% set python_min = "3.8" %}
 
 package:
   name: {{ name|lower }}
@@ -23,7 +24,7 @@ requirements:
     - jgo
     - setuptools >=61.2
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - jpype1 >=1.3.0
     - jgo
     - maven !=3.9.7
