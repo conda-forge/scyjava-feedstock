@@ -1,5 +1,5 @@
 {% set name = "scyjava" %}
-{% set version = "1.12.2" %}
+{% set version = "1.12.3" %}
 {% set build_number = 0 %}
 {% set python_min = "3.9" %}
 
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 5d3d13a9a3f9c3afbc4608faaab0defe5d531e14d4d978bafe1308e0923227ac
+  sha256: 5d62318a51c89e8b4a124b6503851921a3280949ba0ee6ab3efa39dc98e2d99c
 
 build:
   number: {{ build_number }}
