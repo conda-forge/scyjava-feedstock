@@ -1,7 +1,6 @@
 {% set name = "scyjava" %}
 {% set version = "1.12.3" %}
 {% set build_number = 0 %}
-{% set python_min = "3.9" %}
 
 package:
   name: {{ name|lower }}
